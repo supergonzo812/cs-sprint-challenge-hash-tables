@@ -5,7 +5,7 @@
 def get_indices_of_item_weights(weights, length, limit):
 
     # Create a hastable to base on the weights, and length provided
-    weight_dict = { index : weight for index, weight in zip(weights, range(0, length - 1))}
+    weight_dict = { index:weight for index, weight in zip(weights, range(0, len(weights)))}
 
     # Loop through all weights
     for index in range(0, length-1):
