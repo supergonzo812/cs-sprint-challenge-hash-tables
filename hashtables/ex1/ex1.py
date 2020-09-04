@@ -17,11 +17,10 @@ def get_indices_of_item_weights(weights, length, limit):
         if diff_weight in weight_dict:
             # If it is in the list, grab the index of the second number
             index2 = weight_dict[diff_weight]
-            #  compare the two values
-            if cur_weight > diff_weight:
+            #  compare the two indices
+            if index > index2:
                 return (index, index2)
             else:
                 return (index2, index)
-    
     return None
 
